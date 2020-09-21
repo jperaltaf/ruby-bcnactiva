@@ -23,3 +23,18 @@ elsif qty >=3
 end
 
 puts "#{qty} x #{price}€ = #{price * qty}€"
+
+# Instrucció while, per repetir instruccions
+
+account = 1000
+interest = 0.015
+years = 10
+
+current_year = 1
+
+while current_year <= years
+    increment = account * interest
+    account = account + increment
+    puts "Year #{current_year} : #{increment} -> #{account}"
+    current_year += 1
+end
