@@ -23,3 +23,19 @@ elsif qty >=3
 end
 
 puts "#{qty} x #{price}€ = #{price * qty}€"
+
+calculate_interest(1000, 0.015, 10)
+
+# Definir una funció
+def calculate_interest(account, interest, years)
+
+    current_year = 1
+
+    # Instrucció while, per repetir instruccions
+    while current_year <= years
+        increment = account * interest
+        account = account + increment
+        puts "Year #{current_year} : #{increment} -> #{account}"
+        current_year += 1
+    end
+end
