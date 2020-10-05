@@ -24,8 +24,6 @@ end
 
 puts "#{qty} x #{price}€ = #{price * qty}€"
 
-calculate_interest(1000, 0.015, 10)
-
 # Definir una funció
 def calculate_interest(account, interest, years)
 
@@ -39,3 +37,5 @@ def calculate_interest(account, interest, years)
         current_year += 1
     end
 end
+
+calculate_interest(1000, 0.015, 10)
